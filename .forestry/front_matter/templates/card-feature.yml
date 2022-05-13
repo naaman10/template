@@ -74,3 +74,17 @@ fields:
     max: 4
     labelField: 
   label: Cards
+- name: background
+  type: select
+  default: Light
+  config:
+    required: false
+    options:
+    - Light
+    - Dark
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Background
