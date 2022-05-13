@@ -13,11 +13,13 @@ page_blocks:
     cta_label: Button Label
     url: https://www.bbc.co.uk
     type: Primary Outline
+    new_tab: true
 - template: content-feature
   cta:
     type: []
     cta_label: ''
     url: ''
+    new_tab: false
   body_text: Lorem ipsum dolor sit amet litora ut. Est ex curae aenean elementum leo
     ullamcorper finibus viverra aptent lobortis. Class fames mi suspendisse risus
     curabitur quisque lacus dictumst morbi senectus pharetra. Convallis sociosqu ad

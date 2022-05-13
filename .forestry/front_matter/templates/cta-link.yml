@@ -1,0 +1,35 @@
+---
+label: CTA - External Link
+hide_body: true
+display_field: cta_label
+fields:
+- name: cta_label
+  type: text
+  config:
+    required: false
+  label: CTA Label
+- name: url
+  type: text
+  config:
+    required: false
+  label: URL
+- name: type
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - Primary Solid
+    - Secondary Solid
+    - Primary Outline
+    - Secondary Outline
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Type
+- name: new_tab
+  type: boolean
+  label: Open in New Tab?
+  default: true
