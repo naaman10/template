@@ -9,4 +9,9 @@ page_blocks:
     curabitur quisque lacus dictumst morbi senectus pharetra. Convallis sociosqu ad
     class aliquam metus lacinia velit ullamcorper.
   alignment: Left
+  cta:
+    cta_label: Button Label
+    url: https://www.bbc.co.uk
+    type: Primary Outline
+
 ---
