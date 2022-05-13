@@ -16,6 +16,7 @@ fields:
   label: Page Blocks
   template_types:
   - content-feature
+  - card-feature
   config:
     min: 
     max: 
