@@ -1,0 +1,15 @@
+<section class="container">
+    <div class="row">       
+        <div class="col-12 col-md-6 {% case section.align %}{% when "Left" %}order-first{% when "Right" %}order-last{% endcase %}">
+            <div class="featureMedia">
+
+            </div>
+        </div>
+        <div class="col-12 col-md-6">
+            <div class="featureText">
+                {{ section.text | markdownify }}
+            </div>
+        </div>
+    </div>
+</section>
+

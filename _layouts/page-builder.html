@@ -1,0 +1,11 @@
+---
+layout: default
+---
+
+{% for section in page.sections %}
+  {% if section.template == "image-right" %}
+    {% include _blocks/image_right.html %}
+  {% elsif section.template == "image-right-dark" %}
+    {% include _blocks/image_right_dark.html %}
+  {% endif %}
+{%endfor%}
