@@ -5,3 +5,17 @@ fields:
 - type: text
   name: layout
   label: layout
+  default: page-builder
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+- name: page_blocks
+  type: blocks
+  label: Page Blocks
+  template_types:
+  - content-feature
+  config:
+    min: 
+    max: 
