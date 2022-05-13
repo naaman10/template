@@ -1,4 +1,32 @@
 ---
 label: Content Feature
 hide_body: true
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+- name: body_text
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: 'BodyText '
+- name: alignment
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - Left
+    - Right
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Alignment
