@@ -1,38 +1,23 @@
 <div class="container px-4 py-5">
-    <h2 class="pb-2">Columns with icons</h2>
-    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-      <div class="feature col">
-        <div class="feature-icon bg-primary bg-gradient">
-          <svg class="bi" width="1em" height="1em"><use xlink:href="#collection"></use></svg>
-        </div>
-        <h2>Featured title</h2>
-        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-        <a href="#" class="icon-link">
-          Call to action
-          <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"></use></svg>
-        </a>
-      </div>
-      <div class="feature col">
-        <div class="feature-icon bg-primary bg-gradient">
-          <svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle"></use></svg>
-        </div>
-        <h2>Featured title</h2>
-        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-        <a href="#" class="icon-link">
-          Call to action
-          <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"></use></svg>
-        </a>
-      </div>
+    <div class="featureIntro text-{% case section.intro.alignment %}{% when "Left" %}start{% when "Centre" %}center{% when "Right" %}end{% endcase %}">
+    {% if section.intro.title %}<h2>{{ section.intro.title }}</h2>{% endif %}
+    {% if section.intro.intro_text %}{{ section.intro.intro_text | markdownify }}{% endif %}
+    </div>
+    {% assign size =  section.cards | size %}
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-{{ size }}">
+        {% for card in section.cards %}
       <div class="feature col">
         <div class="feature-icon bg-primary bg-gradient">
           <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg>
         </div>
-        <h2>Featured title</h2>
-        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-        <a href="#" class="icon-link">
-          Call to action
-          <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"></use></svg>
-        </a>
+        <h2>{{ card.title }}</h2>
+        <p>{{ card.text }}</p>
+        {% if card.cta %}
+        <div class="featureCTA">
+            <a href="{{ card.cta.url }}" class="btn btn-{% case card.cta.type %}{% when "Primary Solid" %}primary{% when "Secondary Solid" %}secondary{% when "Primary Outline" %}outline-primary{% when "Secondary Outline" %}outline-secondary{% endcase %}" {% if card.cta.new_tab %}target="_blank"{% endif %}>{{ card.cta.cta_label }}</a>
+        </div>
+        {% endif %}
       </div>
+      {% endfor %}
     </div>
   </div>

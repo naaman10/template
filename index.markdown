@@ -34,5 +34,20 @@ page_blocks:
       url: https://www.bbc.co.uk/
       type: Primary Solid
       new_tab: false
-
+  - image: "/uploads/150.png"
+    title: Card Title
+    text: 'Some card text to intro the item '
+    cta:
+      cta_label: Click here
+      url: https://www.bbc.co.uk/
+      type: Primary Solid
+      new_tab: false
+  - image: "/uploads/150.png"
+    title: Card Title
+    text: 'Some card text to intro the item '
+    cta:
+      cta_label: Click here
+      url: https://www.bbc.co.uk/
+      type: Primary Solid
+      new_tab: false
 ---
