@@ -2,9 +2,9 @@
 layout: default
 ---
 
-{% for section in page.sections %}
-  {% if section.template == "image-right" %}
-    {% include _blocks/image_right.html %}
+{% for section in page.page_blocks %}
+  {% if section.template == "content-feature" %}
+    {% include _blocks/feature.html %}
   {% elsif section.template == "image-right-dark" %}
     {% include _blocks/image_right_dark.html %}
   {% endif %}

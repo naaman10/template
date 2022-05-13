@@ -1,14 +1,21 @@
-<section class="container">
+<section class="container p-5">
     <div class="row">       
-        <div class="col-12 col-md-6 {% case section.align %}{% when "Left" %}order-first{% when "Right" %}order-last{% endcase %}">
+        <div class="col-12 col-md-6 d-flex justify-content-center {% case section.alignment %}{% when "Left" %}order-first{% when "Right" %}order-last{% endcase %}">
             <div class="featureMedia">
-
+                <img class="img-fluid" src="https://via.placeholder.com/400x400.png?text=Naaman+Template">
             </div>
         </div>
-        <div class="col-12 col-md-6">
-            <div class="featureText">
-                {{ section.text | markdownify }}
+        <div class="col-12 col-md-6 d-flex">
+            <div class="featureText align-self-center">
+                <h2>{{ section.title }}</h2>
+                {{ section.body_text | markdownify }}
+                {{ if section.cta }}
+                <div class="featureCTA">
+                    <a href="#" class="btn btn-primary">BTN Text</a>
+                </div>
+                {{ endif }}
             </div>
+
         </div>
     </div>
 </section>
