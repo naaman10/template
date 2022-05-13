@@ -7,11 +7,11 @@
         </div>
         <div class="col-12 col-md-6 d-flex">
             <div class="featureText align-self-center">
-                <h2>{{ section.title }}</h2>
-                {{ section.body_text | markdownify }}
+                {% if section.title %}<h2>{{ section.title }}</h2>{% endif %}
+                {% if section.body_text %}{{ section.body_text | markdownify }}{% endif %}
                 {{ if section.cta }}
                 <div class="featureCTA">
-                    <a href="#" class="btn btn-primary">BTN Text</a>
+                    <a href="{{ section.cta.url }}" class="btn btn-{% case section.cta.type %}{% when "Primary Solid" %}primary{% when "Secondary Solid" %}secondary{% when "Primary Outline" %}outline-primary{% when "Secondary Outline" %}outline-secondary{% endcase %}">{{ section.cta.cta_label }}</a>
                 </div>
                 {{ endif }}
             </div>
