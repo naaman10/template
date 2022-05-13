@@ -30,3 +30,34 @@ fields:
       file: 
       path: 
   label: Alignment
+- name: cta
+  type: field_group
+  config: {}
+  fields:
+  - name: cta_label
+    type: text
+    config:
+      required: false
+    label: CTA Label
+  - name: url
+    type: text
+    config:
+      required: false
+    label: URL
+  - name: type
+    type: select
+    default: []
+    config:
+      required: false
+      options:
+      - Primary Solid
+      - Secondary Solid
+      - Primary Outline
+      - Secondary Outline
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Type
+  label: CTA
