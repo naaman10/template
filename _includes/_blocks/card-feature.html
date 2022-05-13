@@ -1,15 +1,17 @@
-<div class="container px-4 py-5">
-    <div class="featureIntro text-{% case section.intro.alignment %}{% when "Left" %}start{% when "Centre" %}center{% when "Right" %}end{% endcase %}">
+<section class="container-fuild px-4 py-5 background-{% case section.background %}{% when "Light" %}light{% when "Dark" %}dark text-white{% endcase %}">
+    <div class="featureIntro px-5 text-{% case section.intro.alignment %}{% when "Left" %}start{% when "Centre" %}center{% when "Right" %}end{% endcase %}">
     {% if section.intro.title %}<h2>{{ section.intro.title }}</h2>{% endif %}
     {% if section.intro.intro_text %}{{ section.intro.intro_text | markdownify }}{% endif %}
     </div>
     {% assign size =  section.cards | size %}
-    <div class="row g-4 py-5 row-cols-1 row-cols-lg-{{ size }}">
+    <div class="row g-4 p-5 row-cols-1 row-cols-lg-{{ size }}">
         {% for card in section.cards %}
       <div class="feature col">
-        <div class="feature-icon bg-primary bg-gradient">
-          <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg>
+          {% if card.image %}
+        <div class="featureMedia">
+            <img class="img-fluid" src="{{ card.image }}">
         </div>
+        {% endif %}
         <h2>{{ card.title }}</h2>
         <p>{{ card.text }}</p>
         {% if card.cta %}
@@ -20,4 +22,4 @@
       </div>
       {% endfor %}
     </div>
-  </div>
+</section>
