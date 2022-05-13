@@ -4,8 +4,10 @@ layout: default
 
 {% for section in page.page_blocks %}
   {% if section.template == "content-feature" %}
-    {% include _blocks/feature.html %}
+    {% include _blocks/media-feature.html %}
   {% elsif section.template == "image-right-dark" %}
     {% include _blocks/image_right_dark.html %}
   {% endif %}
 {%endfor%}
+
+{% include _blocks/card-feature.html %}
