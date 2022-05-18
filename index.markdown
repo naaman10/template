@@ -29,13 +29,36 @@ page_blocks:
   - image: "/uploads/150.png"
     title: Card Title
     text: 'Some card text to intro the item '
+    cta:
+      cta_label: ''
+      url: ''
+      type: ''
+      new_tab: false
   - image: "/uploads/150.png"
     title: Card Title
     text: 'Some card text to intro the item '
+    cta:
+      cta_label: ''
+      url: ''
+      type: ''
+      new_tab: false
   - image: "/uploads/150.png"
     title: Card Title
     text: 'Some card text to intro the item '
+    cta:
+      cta_label: ''
+      url: ''
+      type: ''
+      new_tab: false
   - image: "/uploads/150.png"
     title: Card Title
     text: 'Some card text to intro the item '
+    cta:
+      cta_label: ''
+      url: ''
+      type: ''
+      new_tab: false
+- template: embed
+  embed_code: "&lt;h2&gt;I am an embed&lt;/h2&gt;"
+
 ---
