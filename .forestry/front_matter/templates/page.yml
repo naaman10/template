@@ -17,6 +17,7 @@ fields:
   template_types:
   - content-feature
   - card-feature
+  - embed
   config:
     min: 
     max: 
