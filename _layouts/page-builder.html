@@ -7,6 +7,8 @@ layout: default
     {% include _blocks/media-feature.html %}
   {% elsif section.template == "card-feature" %}
     {% include _blocks/card-feature.html %}
+  {% elsif section.template == "embed" %}
+    {% include _blocks/embed.html %}
   {% endif %}
 {%endfor%}
 
