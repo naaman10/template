@@ -18,6 +18,7 @@ fields:
   - content-feature
   - card-feature
   - embed
+  - image-carousel
   config:
     min: 
     max: 
