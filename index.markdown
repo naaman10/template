@@ -68,7 +68,9 @@ page_blocks:
     text_color: Light
     title: This is a Banner Title
     text: This is some banner text, it adds context.
+    text_align: Center
   full_width: true
   background_colour: Dark
+  align: Center
 
 ---
