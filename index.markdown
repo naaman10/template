@@ -58,7 +58,4 @@ page_blocks:
       url: ''
       type: ''
       new_tab: false
-- template: embed
-  embed_code: "<p>&lt;h2&gt;I am an embedded title&lt;/h2&gt;</p>"
-
 ---
