@@ -1,4 +1,69 @@
 ---
 label: Banner
 hide_body: true
-fields: []
+fields:
+- name: banner_content
+  type: field_group
+  config: {}
+  fields:
+  - name: title
+    type: text
+    config:
+      required: false
+    label: Title
+  - name: text
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: true
+      schema:
+        format: markdown
+    label: Text
+  - name: cta
+    type: field_group
+    config: {}
+    fields:
+    - name: cta
+      type: include
+      config: {}
+      template: cta-link
+      label: CTA
+    label: CTA
+  - name: text_color
+    type: select
+    default: Light
+    config:
+      required: false
+      options:
+      - Dark
+      - Light
+      - Primary
+      - Secondary
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Text Color
+  label: Banner Content
+- name: full_width
+  type: boolean
+  label: Full Width?
+  default: true
+- name: background_colour
+  type: select
+  default: Dark
+  config:
+    required: false
+    options:
+    - Dark
+    - Light
+    - Primary
+    - Secondary
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Background Colour
