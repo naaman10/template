@@ -97,3 +97,14 @@ fields:
       file: 
       path: 
   label: Align
+- name: background_image
+  type: boolean
+  label: Background Image?
+- name: background_image_yes
+  type: file
+  config:
+    maxSize: 64
+  label: Background Image
+  showOnly:
+    field: background_image
+    value: true
