@@ -58,28 +58,17 @@ page_blocks:
       url: ''
       type: ''
       new_tab: false
-- template: image-carousel
-  indicators: true
-  captions: false
-  controls: true
-  images:
-  - image: "/uploads/1080x400.png"
-    image_alt: This is an Alt
-    caption: |-
-      ### This is a caption 1
-
-      With some caption text to go with it
-  - image: "/uploads/1080x400.png"
-    image_alt: This is an Alt
-    caption: |-
-      ### This is a caption 2
-
-      With some caption text to go with it
-  - image: "/uploads/1080x400.png"
-    image_alt: This is an Alt
-    caption: |-
-      ### This is a caption 3
-
-      With some caption text to go with it
+- template: banner
+  banner_content:
+    cta:
+      new_tab: true
+      cta_label: Click Me
+      url: "#"
+      type: Primary Solid
+    text_color: Light
+    title: This is a Banner Title
+    text: This is some banner text, it adds context.
+  full_width: true
+  background_colour: Dark
 
 ---
