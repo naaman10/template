@@ -11,5 +11,8 @@ layout: default
     {% include _blocks/embed.html %}
   {% elsif section.template == "image-carousel" %}
     {% include _blocks/image-carousel.html %}
+  {% elsif section.template == "banner" %}
+    {% include _blocks/banner.html %}
   {% endif %}
 {%endfor%}
+

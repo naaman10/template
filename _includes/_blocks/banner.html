@@ -1,0 +1,15 @@
+<section class="container{% case section.full_width %}{% when true %}-fluid{% endcase %} banner px-3 d-flex align-items-center background-{% case section.background_colour %}{% when "Dark" %}dark{% when "Light" %}light{% when "Primary" %}primary{% when "Secondary" %}secondary{% endcase %} my-3" >
+    <div class="row">
+        <div class="col">
+            <div class="bannerContent text-{% case section.banner_content.text_color %}{% when "Dark" %}dark{% when "Light" %}light{% endcase %}">
+                {% if section.banner_content.title %}<div class="bannerTitle"><h2>{{ section.banner_content.title }}</h2></div>{% endif %}
+                {% if section.banner_content.text %}<div class="bannerBody">{{ section.banner_content.text | markdownify }}</div>{% endif %}
+                {% if section.banner_content.cta %}
+                <div class="featureCTA">
+                    <a href="{{ section.banner_content.cta.url }}" class="btn btn-{% case section.banner_content.cta.type %}{% when "Primary Solid" %}primary{% when "Secondary Solid" %}secondary{% when "Primary Outline" %}outline-primary{% when "Secondary Outline" %}outline-secondary{% endcase %}" {% if section.banner_content.cta.new_tab %}target="_blank"{% endif %}>{{ section.banner_content.cta.cta_label }}</a>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</section>

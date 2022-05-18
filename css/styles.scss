@@ -26,3 +26,16 @@ section.background-dark {
     background-color: $dark;
     color: $light;
 }
+
+section.banner {
+    min-height: 400px;
+}
+
+section.background-light {
+    background-color: $light;
+    color: $dark;
+}
+
+section.background-primary {
+    background-color: $primary;
+}
