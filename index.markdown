@@ -58,4 +58,16 @@ page_blocks:
       url: ''
       type: ''
       new_tab: false
+- template: image-carousel
+  indicators: true
+  captions: true
+  controls: true
+  images:
+  - image: "/uploads/1080x400.png"
+    image_alt: This is an Alt
+    caption: |-
+      ### This is a caption
+
+      With some caption text to go with it
+
 ---
