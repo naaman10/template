@@ -19,6 +19,7 @@ fields:
   - card-feature
   - embed
   - image-carousel
+  - banner
   config:
     min: 
     max: 
