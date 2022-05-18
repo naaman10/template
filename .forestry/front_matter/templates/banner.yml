@@ -20,16 +20,6 @@ fields:
       schema:
         format: markdown
     label: Text
-  - name: cta
-    type: field_group
-    config: {}
-    fields:
-    - name: cta
-      type: include
-      config: {}
-      template: cta-link
-      label: CTA
-    label: CTA
   - name: text_color
     type: select
     default: Light
@@ -46,6 +36,31 @@ fields:
         file: 
         path: 
     label: Text Color
+  - name: text_align
+    type: select
+    default: []
+    config:
+      required: false
+      options:
+      - Left
+      - Center
+      - Right
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Text Align
+  - name: cta
+    type: field_group
+    config: {}
+    fields:
+    - name: cta
+      type: include
+      config: {}
+      template: cta-link
+      label: CTA
+    label: CTA
   label: Banner Content
 - name: full_width
   type: boolean
@@ -67,3 +82,18 @@ fields:
       file: 
       path: 
   label: Background Colour
+- name: align
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - Left
+    - Center
+    - Right
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Align
