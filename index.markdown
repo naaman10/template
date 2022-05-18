@@ -72,5 +72,7 @@ page_blocks:
   full_width: true
   background_colour: Dark
   align: Center
+  background_image: true
+  background_image_yes: "/uploads/1080x400.png"
 
 ---
