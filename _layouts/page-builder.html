@@ -13,6 +13,8 @@ layout: default
     {% include _blocks/image-carousel.html %}
   {% elsif section.template == "banner" %}
     {% include _blocks/banner.html %}
+  {% elsif section.template == "pricing" %}
+    {% include _blocks/pricing.html %}
   {% endif %}
 {%endfor%}
 

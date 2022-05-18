@@ -100,5 +100,31 @@ page_blocks:
       url: "#"
       type: Primary Solid
       new_tab: false
+  - title: Business
+    price: "£20 /pm"
+    features:
+    - Feature 1
+    - Feature 2
+    - Feature 3
+    - Feature 4
+    - Feature 5
+    cta:
+      cta_label: Purchase
+      url: "#"
+      type: Primary Solid
+      new_tab: false
+  - title: Professional
+    price: "£25 /pm"
+    features:
+    - Feature 1
+    - Feature 2
+    - Feature 3
+    - Feature 4
+    - Feature 5
+    cta:
+      cta_label: Purchase
+      url: "#"
+      type: Primary Solid
+      new_tab: false
 
 ---
