@@ -28,8 +28,6 @@ fields:
       options:
       - Dark
       - Light
-      - Primary
-      - Secondary
       source:
         type: simple
         section: 
