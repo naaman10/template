@@ -20,6 +20,21 @@ fields:
       schema:
         format: markdown
     label: Text
+  - name: align
+    type: select
+    default: []
+    config:
+      required: false
+      options:
+      - Left
+      - Center
+      - Right
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Align
   label: Pricing Intro
 - name: pricing_cards
   type: field_group_list
@@ -83,4 +98,19 @@ fields:
       type: boolean
       label: New Tab
     label: Link
+  - name: align
+    type: select
+    default: Center
+    config:
+      required: false
+      options:
+      - Left
+      - Center
+      - Right
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Align
   label: Pricing Footer
