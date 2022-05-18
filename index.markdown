@@ -14,6 +14,22 @@ page_blocks:
     url: https://www.bbc.co.uk
     type: Primary Outline
     new_tab: true
+- template: banner
+  banner_content:
+    cta:
+      new_tab: true
+      cta_label: Click Me
+      url: "#"
+      type: Primary Solid
+    text_color: Light
+    title: This is a Banner Title
+    text: This is some banner text, it adds context.
+    text_align: Center
+  full_width: true
+  background_colour: Dark
+  align: Center
+  background_image: true
+  background_image_yes: "/uploads/1080x400.png"
 - template: card-feature
   background: Light
   intro:
@@ -58,21 +74,5 @@ page_blocks:
       url: ''
       type: ''
       new_tab: false
-- template: banner
-  banner_content:
-    cta:
-      new_tab: true
-      cta_label: Click Me
-      url: "#"
-      type: Primary Solid
-    text_color: Light
-    title: This is a Banner Title
-    text: This is some banner text, it adds context.
-    text_align: Center
-  full_width: true
-  background_colour: Dark
-  align: Center
-  background_image: true
-  background_image_yes: "/uploads/1080x400.png"
 
 ---
