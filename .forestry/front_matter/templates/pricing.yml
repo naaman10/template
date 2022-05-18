@@ -1,4 +1,86 @@
 ---
 label: Pricing
 hide_body: true
-fields: []
+fields:
+- name: pricing_intro
+  type: field_group
+  config: {}
+  fields:
+  - name: title
+    type: text
+    config:
+      required: false
+    label: Title
+  - name: text
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Text
+  label: Pricing Intro
+- name: pricing_cards
+  type: field_group_list
+  fields:
+  - name: title
+    type: text
+    config:
+      required: false
+    label: Title
+  - name: price
+    type: text
+    config:
+      required: false
+    label: Price
+  - name: features
+    type: list
+    config:
+      use_select: false
+      min: 
+      max: 5
+    label: Features
+  - name: cta
+    type: field_group
+    config: {}
+    fields:
+    - name: cta
+      type: include
+      config: {}
+      template: cta-link
+      label: CTA
+    label: CTA
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Pricing Cards
+- name: footer
+  type: field_group
+  config: {}
+  fields:
+  - name: text
+    type: text
+    config:
+      required: false
+    label: Text
+  - name: link
+    type: field_group
+    config: {}
+    fields:
+    - name: text
+      type: text
+      config:
+        required: false
+      label: Text
+    - name: url
+      type: text
+      config:
+        required: false
+      label: URL
+    - name: new_tab
+      type: boolean
+      label: New Tab
+    label: Link
+  label: Pricing Footer
