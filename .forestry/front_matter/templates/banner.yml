@@ -38,7 +38,7 @@ fields:
     label: Text Color
   - name: text_align
     type: select
-    default: []
+    default: Center
     config:
       required: false
       options:
@@ -84,7 +84,7 @@ fields:
   label: Background Colour
 - name: align
   type: select
-  default: []
+  default: Center
   config:
     required: false
     options:
