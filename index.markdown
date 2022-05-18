@@ -74,5 +74,31 @@ page_blocks:
       url: ''
       type: ''
       new_tab: false
+- template: pricing
+  footer:
+    align: Center
+    text: 'Interested in a custom plan? '
+    link:
+      text: Get in touch with us.
+      url: "#"
+      new_tab: false
+  pricing_intro:
+    title: This is a section title
+    text: This is some section text to add more context.
+    align: Center
+  pricing_cards:
+  - title: Standard
+    price: "£15 /pm"
+    features:
+    - Feature 1
+    - Feature 2
+    - Feature 3
+    - Feature 4
+    - Feature 5
+    cta:
+      cta_label: Purchase
+      url: "#"
+      type: Primary Solid
+      new_tab: false
 
 ---
