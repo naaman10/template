@@ -9,7 +9,7 @@ layout: default
     {% include _blocks/card-feature.html %}
   {% elsif section.template == "embed" %}
     {% include _blocks/embed.html %}
+  {% elsif section.template == "image-carousel" %}
+    {% include _blocks/image-carousel.html %}
   {% endif %}
 {%endfor%}
-
-{% include _blocks/image-carousel.html %}

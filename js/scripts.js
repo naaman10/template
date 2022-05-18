@@ -1,4 +1,4 @@
 
-const myCarouselElement = document.querySelector('#carouselExampleCaptions')
+const myCarouselElement = document.querySelector('#carousel')
 const carousel = new bootstrap.Carousel(myCarouselElement, {
 })

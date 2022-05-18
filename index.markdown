@@ -60,13 +60,25 @@ page_blocks:
       new_tab: false
 - template: image-carousel
   indicators: true
-  captions: true
+  captions: false
   controls: true
   images:
   - image: "/uploads/1080x400.png"
     image_alt: This is an Alt
     caption: |-
-      ### This is a caption
+      ### This is a caption 1
+
+      With some caption text to go with it
+  - image: "/uploads/1080x400.png"
+    image_alt: This is an Alt
+    caption: |-
+      ### This is a caption 2
+
+      With some caption text to go with it
+  - image: "/uploads/1080x400.png"
+    image_alt: This is an Alt
+    caption: |-
+      ### This is a caption 3
 
       With some caption text to go with it
 
