@@ -5,27 +5,66 @@ fields:
 - type: text
   name: title
   label: title
-- type: text
-  name: email
-  label: email
 - type: textarea
   name: description
   label: description
 - type: text
   name: baseurl
   label: baseurl
+  hidden: true
 - type: text
   name: url
   label: url
+  hidden: true
+- type: text
+  name: email
+  label: email
 - type: text
   name: twitter_username
-  label: twitter_username
+  label: Twitter Username
 - type: text
   name: github_username
-  label: github_username
+  label: Github Username
 - type: text
   name: theme
   label: theme
+  hidden: true
 - type: list
   name: plugins
   label: plugins
+  hidden: true
+- name: fonts
+  type: field_group
+  config: {}
+  fields:
+  - name: primary
+    type: field_group
+    config: {}
+    fields:
+    - name: url
+      type: text
+      config:
+        required: false
+      label: URL
+    - name: font-family
+      type: text
+      config:
+        required: false
+      label: font-family
+    label: Primary
+  - name: secondary
+    type: field_group
+    config: {}
+    fields:
+    - name: url
+      type: text
+      config:
+        required: false
+      label: URL
+    - name: font-family
+      type: text
+      config:
+        required: false
+      label: font-family
+    label: Secondary
+  label: Fonts
