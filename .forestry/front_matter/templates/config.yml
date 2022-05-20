@@ -68,3 +68,5 @@ fields:
       label: font-family
     label: Secondary
   label: Fonts
+pages:
+- _config.yml
