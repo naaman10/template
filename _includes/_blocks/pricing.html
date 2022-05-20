@@ -1,23 +1,24 @@
-<section class="container py-5">
+{% assign background = section.background %}
+<section class="container-fluid py-5 background-{% case section.background %}{% when "Dark" %}dark{% when "Light" %}light{% endcase %}">
     <div class="row my-5">
         <div class="col">
-            <div class="sectionText text-{% case section.pricing_intro.align %}{% when "Left" %}start{% when "Center" %}center{% when "Right"%}end{% endcase %}">
+            <div class="sectionText text-{% case section.pricing_intro.align %}{% when "Left" %}start{% when "Center" %}center{% when "Right"%}end{% endcase %} text-{% case section.background %}{% when "Dark" %}light{% when "Light" %}dark{% endcase %}">
                 {% if section.pricing_intro.title %}<h2>{{ section.pricing_intro.title }}</h2>{% endif %}
                 {% if section.pricing_intro.text %}<p>{{ section.pricing_intro.text }}</p>{% endif %}
             </div>
         </div>
     </div>
-    <div class="row my-5">
+    <div class="row my-5 d-flex justify-content-center ">
         {% for card in section.pricing_cards %}
-        <div class="col">
-            <div class="card p-3 bg-dark text-light">
-                <div class="card-body">
+        <div class="col-3">
+            <div class="card p-3 background-{% case section.background %}{% when "Dark" %}light text-dark{% when "Light" %}dark text-light{% endcase %}">
+                <div class="card-body ">
                     {% if card.title %}<h3 class="card-title">{{ card.title }}</h3>{% endif %}
                     {% if card.price %}<h5 class="card-price">{{ card.price }}</h5>{% endif %}
                 </div>
                 <ul class="list-group list-group-flush bg-transparent text-light">
                     {% for feature in card.features %}
-                    <li class="list-group-item bg-transparent text-light">{{ feature }}</li>
+                    <li class="list-group-item bg-transparent text-{% case section.background %}{% when "Dark" %}dark{% when "Light" %}light{% endcase %}">{{ feature }}</li>
                     {% endfor %}
                 </ul>
                 {% if card.cta %}
@@ -34,7 +35,7 @@
     <div class="row">
         <div class="col">
             <div class="sectionFooter text-{% case section.footer.align %}{% when "Left" %}start{% when "Center" %}center{% when "Right"%}end{% endcase %}">
-                <p></p>{% if section.footer.text %}{{ section.footer.text }}{% endif %}{% if section.footer.link.text %}<a href="{{ section.footer.link.url }}" {% if section.footer.link.new_tab %}target="_blank"{% endif %}>{{ section.footer.link.text }}</a>{% endif %}</p>
+                <p class="text-{% case section.background %}{% when "Dark" %}light{% when "Light" %}dark{% endcase %}">{% if section.footer.text %}{{ section.footer.text }}{% endif %}{% if section.footer.link.text %}<a href="{{ section.footer.link.url }}" {% if section.footer.link.new_tab %}target="_blank"{% endif %}>{{ section.footer.link.text }}</a>{% endif %}</p>
             </div>
         </div>
     </div> 

@@ -1,5 +1,6 @@
 ---
 ---
+
 $white: #fffff;
 $black: #000000;
 $blue: #3459e6;
@@ -22,8 +23,8 @@ $danger: $red;
 $light: $white;
 $dark: $black;
 
-section.background-dark {
-    background-color: $dark;
+.background-dark {
+    background-color: $dark!important;
     color: $light;
 }
 
@@ -34,14 +35,14 @@ section.banner {
     background-size: cover;
 }
 
-section.background-light {
-    background-color: $light;
+.background-light {
+    background-color: $light!important;
     color: $dark;
 }
 
-section.background-primary {
-    background-color: $primary;
+.background-primary {
+    background-color: $primary!important;
 }
-section.background-secondary {
-    background-color: $secondary;
+.background-secondary {
+    background-color: $secondary!important;
 }
