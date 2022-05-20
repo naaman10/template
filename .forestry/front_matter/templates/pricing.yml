@@ -114,3 +114,17 @@ fields:
         path: 
     label: Align
   label: Pricing Footer
+- name: background
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - Dark
+    - Light
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Background
