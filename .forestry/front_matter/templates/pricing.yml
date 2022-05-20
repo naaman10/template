@@ -116,7 +116,7 @@ fields:
   label: Pricing Footer
 - name: background
   type: select
-  default: []
+  default: Dark
   config:
     required: false
     options:
