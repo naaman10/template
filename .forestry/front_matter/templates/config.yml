@@ -1,0 +1,31 @@
+---
+label: config
+hide_body: true
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: email
+  label: email
+- type: textarea
+  name: description
+  label: description
+- type: text
+  name: baseurl
+  label: baseurl
+- type: text
+  name: url
+  label: url
+- type: text
+  name: twitter_username
+  label: twitter_username
+- type: text
+  name: github_username
+  label: github_username
+- type: text
+  name: theme
+  label: theme
+- type: list
+  name: plugins
+  label: plugins
