@@ -126,5 +126,6 @@ page_blocks:
       url: "#"
       type: Primary Solid
       new_tab: false
+  background: Dark
 
 ---
